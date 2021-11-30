@@ -349,8 +349,9 @@ p {
 .commands__commands-block {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
+	height: fit-content;
 	max-width: 50rem;
 	margin-left: 2rem;
 	grid-column: 4 / 13;
