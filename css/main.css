@@ -494,26 +494,32 @@ p {
 	align-items: center;
 	justify-content: center;
 	color: #203647;
+	height: 47.5rem;
 	max-height: 100vh;
-	height: 50rem;
 }
 
 .team h2 {
-	font-size: 3rem;
+	font-size: 4rem;
 	font-weight: 600;
-	margin-bottom: 4rem;
+	margin-bottom: 6rem;
 }
 
 .team-members {
-	width: 100%;
 	display: flex;
 	justify-content: space-around;
+	/* flex-wrap: wrap; */
+	width: 100%;
 }
 
 .team-members li {
 	flex-direction: column;
 	text-align: center;
 	font-weight: 600;
+	flex-basis: 25%;
+}
+
+.team-members img {
+	width: 128px;
 }
 
 .team-members li h3 { font-size: 1.5rem; }
@@ -675,6 +681,12 @@ p {
 	.commands__search-svg { display: none; }
 	.commands__search-bar { width: 100%; }
 	.commands__search-bar:focus { width: 100%; }
+
+	/* ABOUT ---------------------------------------------------------------- */
+	.team h2 {
+		font-size: 3rem;
+		margin-bottom: 4rem;
+	}
 }
 
 @media only screen and (max-width: 993px) {
