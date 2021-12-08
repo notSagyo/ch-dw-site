@@ -1,3 +1,9 @@
+/* acabo de descubrir esto de casualidad así que lo aplico :) */
+*::selection {
+	color: white;
+	background-color: rgba(220, 53, 70, .75);
+}
+
 body {
 	background-color: #fefefe;
 }
