@@ -1,0 +1,14 @@
+body {
+	background-color: #fefefe;
+}
+
+.carousel-item {
+	filter: sepia(10%) brightness(90%);
+}
+
+.nosotros {
+	background-image: url("img/nosotros.jpg");
+	background-size: cover;
+	background-position: top center;
+	filter: brightness(1);
+}
