@@ -1,0 +1,12 @@
+//Colors:
+$dark-blue: #12232E;
+$light-blue: #007CC7;
+$lightest-blue: #4DA8DA;
+$dark-blue-shadow: #203647;
+$light-blue-shadow: #EEFBFB;
+
+//Padding - margins
+@mixin pm-0 {
+	padding: 0;
+	margin: 0;
+}
