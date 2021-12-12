@@ -1,3 +1,4 @@
+// CONTACT ------------------------------------------------------------------ //
 .contact-container .wrapper{
 	display: flex;
 	justify-content: center;
@@ -88,6 +89,7 @@
 	height: 10rem;
 }
 
+// SM ----------------------------------------------------------------------- //
 @media only screen and (max-width: 701px) {
 	.contact {
 		min-width: 0;

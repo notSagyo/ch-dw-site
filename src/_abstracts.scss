@@ -29,3 +29,11 @@ $shadow-r: 2px 2px 4px $shadow-color;
   width: $size;
   height: $size;
 }
+
+@mixin font($size:"", $weight:"", $style:"", $height:"", $family:"") {
+  @if $size != "" { font-size: $size; }
+  @if $weight != "" { font-weight: $weight; }
+  @if $style != "" { font-style: $style; }
+  @if $height != "" { line-height: $height; }
+  @if $family != "" { font-family: $family; }
+}

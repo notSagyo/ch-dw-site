@@ -44,7 +44,7 @@ ul a:hover, p a:hover {
 	text-decoration: underline;
 }
 
-// OTHER --------------------------------------------------------------------- /
+// OTHER -------------------------------------------------------------------- //
 .wrapper {
   @include mx-auto;
 
@@ -57,7 +57,9 @@ ul a:hover, p a:hover {
 	justify-content: center;
 	padding: 1rem;
 	margin: 0 -1rem;
+
 	transition: transform .35s;
+  -webkit-tap-highlight-color: #00000000;
 
   &.active { transform: rotateZ(180deg); }
 
@@ -123,7 +125,6 @@ ul a:hover, p a:hover {
 	background: $light-blue-shadow;
 }
 
-
 .section-header {
   margin-left: 1rem;
 	padding-right: 1rem;
@@ -142,15 +143,14 @@ ul a:hover, p a:hover {
 }
 
 .disabled {
-	pointer-events: none;
+	pointer-events: none !important;
 	color: darkgray;
 }
 
 .hidden { display: none; }
 
-
-
+// LG ----------------------------------------------------------------------- //
 @media only screen and (max-width: 1201px) {
-	.wrapper { width: 85vw; }
-	.burger-menu { display: flex; }
+.wrapper { width: 85vw; }
+.burger-menu { display: flex; }
 }
