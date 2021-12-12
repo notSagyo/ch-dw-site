@@ -84,43 +84,6 @@ ul a:hover, p a:hover {
   flex-grow: 1;
 }
 
-.title {
-  font-weight: 600;
-  font-size: 2.5rem;
-}
-
-.img-radius {
-  border-radius: 1rem;
-}
-
-.fw-600 {
-  font-weight: 600;
-}
-
-.waves {
-  pointer-events: none;
-}
-
-.drop-shadow-l {
-  filter: drop-shadow(-2px 2px 4px rgba(12, 22, 29, 0.25));
-}
-
-.drop-shadow-r {
-  filter: drop-shadow(2px 2px 4px rgba(12, 22, 29, 0.25));
-}
-
-.shadow-l {
-  box-shadow: -2px 2px 4px #0c161d40;
-}
-
-.shadow-r {
-  box-shadow: 2px 2px 4px #0c161d40;
-}
-
-.textshadow-light {
-  text-shadow: 1px 1px 2px #0c161d40;
-}
-
 .button, .button-light {
   display: block;
   border: none;
@@ -159,13 +122,51 @@ ul a:hover, p a:hover {
   color: #EEFBFB;
 }
 
-.disabled {
-  pointer-events: none !important;
-  color: darkgray;
+.title {
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+
+.waves {
+  pointer-events: none;
+  margin-top: -1px;
+}
+
+.drop-shadow-l {
+  filter: drop-shadow(-2px 2px 4px rgba(12, 22, 29, 0.25));
+}
+
+.drop-shadow-r {
+  filter: drop-shadow(2px 2px 4px rgba(12, 22, 29, 0.25));
+}
+
+.shadow-l {
+  box-shadow: -2px 2px 4px #0c161d40;
+}
+
+.shadow-r {
+  box-shadow: 2px 2px 4px #0c161d40;
+}
+
+.textshadow-light {
+  text-shadow: 1px 1px 2px #0c161d40;
+}
+
+.img-radius {
+  border-radius: 1rem;
+}
+
+.fw-600 {
+  font-weight: 600;
 }
 
 .hidden {
   display: none;
+}
+
+.disabled {
+  pointer-events: none !important;
+  color: darkgray;
 }
 
 @media only screen and (max-width: 1201px) {

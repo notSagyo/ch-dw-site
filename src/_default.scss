@@ -1,6 +1,6 @@
 // NATIVE TAGS -------------------------------------------------------------- //
 body {
-  @include pm-0;
+	@include pm-0;
 
 	color: $light-blue-shadow;
 	text-shadow: $ts-dark;
@@ -14,7 +14,7 @@ body, input, textarea, select {
 }
 
 h1, h2, h3, h4, h5, h6, img {
-  @include pm-0;
+	@include pm-0;
 
 	font-weight: inherit;
 	font-size: inherit;
@@ -27,15 +27,15 @@ a {
 }
 
 p {
-  @include pm-0;
+	@include pm-0;
 
 	line-height: 1.5;
 
-  a { color: $light-blue-shadow; }
+	a { color: $light-blue-shadow; }
 }
 
 ul {
-  @include pm-0;
+	@include pm-0;
 
 	list-style: none;
 }
@@ -46,7 +46,7 @@ ul a:hover, p a:hover {
 
 // OTHER -------------------------------------------------------------------- //
 .wrapper {
-  @include mx-auto;
+	@include mx-auto;
 
 	width: 75vw;
 }
@@ -59,17 +59,17 @@ ul a:hover, p a:hover {
 	margin: 0 -1rem;
 
 	transition: transform .35s;
-  -webkit-tap-highlight-color: #00000000;
+	-webkit-tap-highlight-color: #00000000;
 
-  &.active { transform: rotateZ(180deg); }
+	&.active { transform: rotateZ(180deg); }
 
-  div {
-    width: 1.75rem;
-    height: 2px;
-    margin: .2rem 0;
-    border-radius: 1px;
-    background-color: $light-blue-shadow;
-  }
+	div {
+		width: 1.75rem;
+		height: 2px;
+		margin: .2rem 0;
+		border-radius: 1px;
+		background-color: $light-blue-shadow;
+	}
 }
 
 .top-section-container {
@@ -81,24 +81,8 @@ ul a:hover, p a:hover {
 	min-height: 100vh;
 	background-image: linear-gradient(135deg, $dark-blue, $dark-blue-shadow);
 
-  .wrapper{ flex-grow: 1; }
+	.wrapper{ flex-grow: 1; }
 }
-
-.title {
-	font-weight: 600;
-	font-size: 2.5rem;
-}
-
-// smol classes
-.img-radius { border-radius: 1rem; }
-.fw-600 { font-weight: 600; }
-.waves { pointer-events: none; }
-
-.drop-shadow-l { filter: drop-shadow(-2px 2px 4px rgba(12, 22, 29, 0.25)); }
-.drop-shadow-r { filter: drop-shadow(2px 2px 4px rgba(12, 22, 29, 0.25)); }
-.shadow-l { box-shadow: $shadow-l; }
-.shadow-r { box-shadow: $shadow-r; }
-.textshadow-light { text-shadow: $ts-light }
 
 .button {
 	display: block;
@@ -115,18 +99,18 @@ ul a:hover, p a:hover {
 
 	background: linear-gradient(90deg, $lightest-blue, $light-blue);
 
-  &:hover { transform: scale(1.05); }
+	&:hover { transform: scale(1.05); }
 }
 
 .button-light {
-  @extend .button;
+	@extend .button;
 
 	color: $dark-blue-shadow;
 	background: $light-blue-shadow;
 }
 
 .section-header {
-  margin-left: 1rem;
+	margin-left: 1rem;
 	padding-right: 1rem;
 	border-bottom: solid 2px $light-blue;
 
@@ -135,19 +119,39 @@ ul a:hover, p a:hover {
 }
 
 .search-bar {
-  font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	font-weight: 400;
 	letter-spacing: 0.05rem;
 	color: $light-blue-shadow;
 }
 
+.title {
+	font-weight: 600;
+	font-size: 2.5rem;
+}
+
+.waves {
+	pointer-events: none;
+	margin-top: -1px;
+}
+
+// smol classes
+.drop-shadow-l { filter: drop-shadow(-2px 2px 4px rgba(12, 22, 29, 0.25)); }
+.drop-shadow-r { filter: drop-shadow(2px 2px 4px rgba(12, 22, 29, 0.25)); }
+.shadow-l { box-shadow: $shadow-l; }
+.shadow-r { box-shadow: $shadow-r; }
+.textshadow-light { text-shadow: $ts-light }
+
+.img-radius { border-radius: 1rem; }
+.fw-600 { font-weight: 600; }
+.hidden { display: none; }
+
 .disabled {
 	pointer-events: none !important;
 	color: darkgray;
 }
 
-.hidden { display: none; }
 
 // LG ----------------------------------------------------------------------- //
 @media only screen and (max-width: 1201px) {

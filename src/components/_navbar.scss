@@ -5,39 +5,39 @@
 	height: $nav-h;
 	flex-grow: 1;
 
-  .nav__logo {
-    color: white;
+	.nav__logo {
+		color: white;
 
-    a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
 
-    svg {
-      @include size(2rem);
+		svg {
+			@include size(2rem);
 
-      margin-right: .5rem;
-    }
-  }
+			margin-right: .5rem;
+		}
+	}
 
-  .nav__logo-text {
-    font-size: 1.75rem;
-    font-weight: 300;
-  }
+	.nav__logo-text {
+		font-size: 1.75rem;
+		font-weight: 300;
+	}
 
-  .nav__links {
-    display: flex;
+	.nav__links {
+		display: flex;
 
-    li a {
-      font-size: 1.25rem;
-      font-weight: 500;
-      padding: 0 1.5vw;
-    }
+		li a {
+			font-size: 1.25rem;
+			font-weight: 500;
+			padding: 0 1.5vw;
+		}
 
-    li:last-child a { padding: 0 0 0 .75vw; }
-  }
+		li:last-child a { padding: 0 0 0 .75vw; }
+	}
 }
 
 
