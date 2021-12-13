@@ -792,8 +792,16 @@ ul a:hover, p a:hover {
   padding-top: 4rem;
 }
 .features .feature {
-  margin-bottom: 4rem;
   display: flex;
+  margin-bottom: 4rem;
+}
+.features .feature__img img {
+  width: 290px;
+}
+.features .feature__text {
+  color: #203647;
+  margin: 1rem;
+  max-width: 25rem;
 }
 .features .feature h3 {
   font-weight: 700;
@@ -802,15 +810,6 @@ ul a:hover, p a:hover {
 .features .feature p {
   padding: 0.5rem 0;
   font-weight: 500;
-}
-.features .feature__img img {
-  width: 290px;
-  max-width: 100%;
-}
-.features .feature__text {
-  color: #12232E;
-  margin: 1rem;
-  max-width: 25rem;
 }
 .features .feature:nth-child(2n) {
   flex-direction: row-reverse;
@@ -823,6 +822,10 @@ ul a:hover, p a:hover {
     min-height: 0;
     max-height: 100vh;
     height: 50rem;
+  }
+
+  .features .feature .feature__text {
+    margin: 0 1rem;
   }
 }
 @media only screen and (max-width: 701px) {

@@ -152,7 +152,7 @@ ul a:hover, p a:hover {
 .shadow-r { box-shadow: $shadow-r; }
 .textshadow-light { text-shadow: $ts-light }
 
-.img-radius { border-radius: 1rem; }
+.img-radius { border-radius: $container-radius; }
 .fw-600 { font-weight: 600; }
 .hidden { display: none; }
 

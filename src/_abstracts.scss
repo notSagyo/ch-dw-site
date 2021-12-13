@@ -8,11 +8,15 @@ $shadow-color: #0c161d40;
 
 // Other
 $nav-h: 4rem;
+
+$container-radius: 1rem;
+
 $ts-dark: 1px 1px 4px #0c161d80;
 $ts-light: 1px 1px 2px #0c161d40;
 $ts-button: 1px 1px 2px #0c161d26;
 $shadow-l: -2px 2px 4px $shadow-color;
 $shadow-r: 2px 2px 4px $shadow-color;
+
 
 // Mixins
 @mixin pm-0 {
