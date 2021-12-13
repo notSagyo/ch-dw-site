@@ -1,0 +1,140 @@
+/* FOOTER ------------------------------------------------------------------- */
+/* DONATION ------------------------- */
+.donate-container {
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0px 4px 4px $shadow-color;
+}
+
+.donate {
+	margin-top: 0;
+	margin-top: calc(-7.5vw + 4rem);
+	padding: 0 0 3rem 0;
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+  &__right { margin: 0 1rem; }
+
+  &__bar {
+    display: flex;
+    margin-top: 1rem;
+  }
+
+  &__link-box {
+    display: flex;
+    align-items: center;
+    text-shadow: none;
+    background-color: $light-blue-shadow;
+    color: transparentize($color: $dark-blue-shadow, $amount: .25);
+
+    p { margin: 0 .5rem; }
+  }
+
+  &__link-svg, &__arrow-svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparentize($color: $light-blue-shadow, $amount: .9);
+  }
+
+  &__link-svg { border-radius: .25rem 0 0 .25rem; }
+  &__arrow-svg { border-radius: 0 .25rem .25rem 0; }
+}
+
+.footer-light .donate {
+	margin-top: calc(4rem - 5vw);
+	padding-bottom: calc(1.5rem + 1.5vw);
+}
+
+/* FOOTER --------------------------- */
+.footer-container {
+	background: linear-gradient(135deg, $dark-blue-shadow 0%, $dark-blue 100%);
+}
+
+.footer {
+	padding: 2.5rem 0 1rem 0;
+
+	li a {
+		display: inline-block;
+		padding: 0.125rem 0.5rem;
+	}
+
+	&__links {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__social {
+		display: flex;
+		align-items: center;
+	}
+
+	&__credits { text-align: center; }
+}
+
+.footer-container.footer-light {
+	background: linear-gradient(90deg, $light-blue 0%, $lightest-blue 100%);
+	text-shadow: 1px 1px 2px rgba(12, 22, 29, 0.25);
+}
+
+@media only screen and (max-width: 701px) {
+	.footer {
+		padding: 1rem 0;
+
+		&__nav {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		&__social { flex-direction: column; }
+
+		&__credits { margin-top: 1rem; }
+	}
+
+	/* DONATION ------------------------- */
+	.donate {
+		justify-content: center;
+
+		&__brand-svg { display: none; }
+
+		&__right { max-width: 25rem; }
+
+		&__bar {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+		}
+
+		&__link-box {
+      border-radius: .25rem .25rem 0 0;
+			grid-column: 1 / 3;
+			grid-row: 1 / 2;
+      width: 100%;
+
+			p {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+			}
+		}
+
+		&__link-svg {
+			width: 100%;
+			grid-column: 1 / 2;
+			grid-row: 2 / 3;
+			background-color: transparentize($color: $light-blue-shadow, $amount: .8);
+			border-radius: 0 0 0 .25rem;
+		}
+
+		&__arrow-svg {
+			width: 100%;
+			grid-column: 2 / 3;
+			grid-row: 2 / 3;
+			border-radius: 0 0 .25rem 0;
+		}
+	}
+}
