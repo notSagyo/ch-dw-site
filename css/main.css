@@ -229,22 +229,21 @@ ul a:hover, p a:hover {
     box-shadow: -2px 2px 4px #0c161d40;
   }
 
-  .nav__logo {
-    margin-left: auto;
-    margin-right: auto;
+  .navbar .nav__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
-
   .navbar .nav__links {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    left: 0;
     top: 4rem;
+    left: 0;
     width: 100%;
     padding: 1rem 0;
     line-height: 1.875rem;
-    background-color: #12232E;
     background-color: #203647;
     box-shadow: -2px 2px 4px #0c161d40;
   }
