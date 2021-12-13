@@ -40,23 +40,20 @@
 	min-height: 5rem;
 	padding: 1rem 0;
 
-	h2 {
-		@include font(1.5rem, 600);
-	}
+	h2 { @include font(1.5rem, 600); }
 
 	/* height fix */
-	li { display: block; }
 	img { width: 3rem; }
 
-	.supporters-icons {
-		display: grid;
-		grid-template-columns: repeat(12, 1fr);
-		row-gap: 1rem;
-		justify-content: space-around;
-		justify-items: center;
-		margin-left: 1rem;
-		width: 100%;
-	}
+	// .supporters-icons {
+	// 	display: grid;
+	// 	grid-template-columns: repeat(12, 1fr);
+	// 	row-gap: 1rem;
+	// 	justify-content: space-around;
+	// 	justify-items: center;
+	// 	margin-left: 1rem;
+	// 	width: 100%;
+	// }
 }
 
 .team-container {
@@ -113,8 +110,6 @@
 	flex-direction: column;
 
 	h2 { padding-bottom: 1rem; }
-
-	.supporters-icons { margin-left: 0; }
 }
 }
 
@@ -143,16 +138,5 @@
 		li { margin-bottom: 3rem; }
 		li h4 { line-height: 1.5;}
 	}
-}
-
-.supporters .supporters-icons { grid-template-columns: repeat(6, 1fr); }
-}
-
-// XS ------------------------------------------------------------------------ //
-@media only screen and (max-width: 401px) {
-.supporters {
-	align-items: center;
-
-	.supporters-icons { grid-template-columns: repeat(4, 1fr); }
 }
 }

@@ -55,6 +55,7 @@ ul a:hover, p a:hover {
 	display: none;
 	flex-direction: column;
 	justify-content: center;
+
 	padding: 1rem;
 	margin: 0 -1rem;
 
@@ -73,27 +74,29 @@ ul a:hover, p a:hover {
 }
 
 .top-section-container {
-	margin-top: -$nav-h;
-	padding-top: $nav-h;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+
 	min-height: 100vh;
+	margin-top: -$nav-h;
+	padding-top: $nav-h;
+
 	background-image: linear-gradient(135deg, $dark-blue, $dark-blue-shadow);
 
 	.wrapper{ flex-grow: 1; }
 }
 
 .button {
+	@include font(1.25rem, 600, $height: 1.25);
+
 	display: block;
-	border: none;
 	width: fit-content;
 	height: fit-content;
 	padding: .75rem 1.5rem;
+	border: none;
 	border-radius: 100rem;
 
-	font-size: 1.25rem;
-	font-weight: 600;
 	text-shadow: $ts-button;
 	color: $light-blue-shadow;
 

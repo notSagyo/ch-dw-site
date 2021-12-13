@@ -72,12 +72,12 @@ ul a:hover, p a:hover {
 }
 
 .top-section-container {
-  margin-top: -4rem;
-  padding-top: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
+  margin-top: -4rem;
+  padding-top: 4rem;
   background-image: linear-gradient(135deg, #12232E, #203647);
 }
 .top-section-container .wrapper {
@@ -85,14 +85,15 @@ ul a:hover, p a:hover {
 }
 
 .button, .button-light {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.25;
   display: block;
-  border: none;
   width: fit-content;
   height: fit-content;
   padding: 0.75rem 1.5rem;
+  border: none;
   border-radius: 100rem;
-  font-size: 1.25rem;
-  font-weight: 600;
   text-shadow: 1px 1px 2px #0c161d26;
   color: #EEFBFB;
   background: linear-gradient(90deg, #4DA8DA, #007CC7);
@@ -228,33 +229,32 @@ ul a:hover, p a:hover {
     box-shadow: -2px 2px 4px #0c161d40;
   }
 
-  .nav__links {
+  .nav__logo {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar .nav__links {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     left: 0;
     top: 4rem;
-    padding: 1rem 0;
     width: 100%;
+    padding: 1rem 0;
+    line-height: 1.875rem;
     background-color: #12232E;
     background-color: #203647;
     box-shadow: -2px 2px 4px #0c161d40;
   }
-
-  .nav__links.collapsed {
-    margin-top: -6rem;
+  .navbar .nav__links.collapsed {
+    margin-top: -13.5rem;
     top: -100%;
   }
-
   .navbar .nav__links li a {
     display: inline-block;
     padding: 0.25rem 0;
-  }
-
-  .nav__logo {
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 /* FOOTER ------------------------------------------------------------------- */
@@ -439,20 +439,8 @@ ul a:hover, p a:hover {
   font-size: 1.5rem;
   font-weight: 600;
 }
-.supporters li {
-  display: block;
-}
 .supporters img {
   width: 3rem;
-}
-.supporters .supporters-icons {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  row-gap: 1rem;
-  justify-content: space-around;
-  justify-items: center;
-  margin-left: 1rem;
-  width: 100%;
 }
 
 .team-container {
@@ -509,9 +497,6 @@ ul a:hover, p a:hover {
   .supporters h2 {
     padding-bottom: 1rem;
   }
-  .supporters .supporters-icons {
-    margin-left: 0;
-  }
 }
 @media only screen and (max-width: 701px) {
   .about .title {
@@ -540,31 +525,15 @@ ul a:hover, p a:hover {
   .team .team-members li h4 {
     line-height: 1.5;
   }
-
-  .supporters .supporters-icons {
-    grid-template-columns: repeat(6, 1fr);
-  }
-}
-@media only screen and (max-width: 401px) {
-  .supporters {
-    align-items: center;
-  }
-  .supporters .supporters-icons {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 .commands {
   margin-top: 2rem;
   margin-bottom: 6rem;
-  display: grid;
-  row-gap: 2rem;
-  grid-template-columns: repeat(12, 1fr);
 }
 .commands__categories {
   display: flex;
   flex-direction: column;
   min-width: 12.5rem;
-  grid-column: 1/4;
 }
 .commands__categories-list {
   margin-top: 1rem;
@@ -594,9 +563,6 @@ ul a:hover, p a:hover {
   align-items: flex-start;
   justify-content: space-between;
   height: fit-content;
-  max-width: 50rem;
-  margin-left: 2rem;
-  grid-column: 4/13;
 }
 .commands__commands-block h1, .commands__search {
   margin-bottom: 1rem;
@@ -616,7 +582,7 @@ ul a:hover, p a:hover {
   margin-right: 0.75rem;
 }
 .commands__search-bar {
-  width: 3.75rem;
+  width: 6rem;
   padding: 0.5rem 1.125rem;
   border: none;
   border-radius: 0.5rem;
@@ -649,6 +615,11 @@ ul a:hover, p a:hover {
     width: 100%;
   }
 }
+@media only screen and (max-width: 993px) {
+  .commands {
+    margin-bottom: 3rem;
+  }
+}
 @media only screen and (max-width: 701px) {
   .commands .section-header {
     margin: 0;
@@ -667,8 +638,6 @@ ul a:hover, p a:hover {
     flex-wrap: wrap;
     width: 100%;
     min-width: 0;
-    grid-column: 1/13;
-    grid-row: 1/2;
   }
   .commands__categories-list {
     width: 100%;
@@ -676,8 +645,6 @@ ul a:hover, p a:hover {
   .commands__commands-block {
     width: 100%;
     margin: 0;
-    grid-column: 1/13;
-    grid-row: 2/3;
   }
 }
 .contact-container .wrapper {
@@ -687,125 +654,67 @@ ul a:hover, p a:hover {
 }
 
 .contact {
+  width: 65%;
+  min-width: 40rem;
   margin-top: 4rem;
   margin-bottom: 6rem;
-  min-width: 40rem;
-  width: 65%;
 }
-
 .contact__inputs-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  row-gap: 2rem;
-  column-gap: 2rem;
   padding: 1rem;
   margin: 1.5rem 0;
   border-radius: 1rem;
   background-color: #203647;
 }
-
 .contact__form label {
   display: block;
   margin-bottom: 0.75rem;
 }
-
 .contact__form input[type=text],
 .contact__form input[type=email] {
   width: 100%;
 }
-
-/* overflows from grid because of padding, removing padding causes text to be
- * too close to the borders, so using box-sizing is best here to avoid calcs */
-.contact__inputs-container input,
-.contact__form textarea,
-.contact__form select {
-  box-sizing: border-box;
-  padding: 0.5rem;
-  border: none;
-  border-radius: 0.25rem;
-}
-
-/* solution without box-sizing */
-/* .contact__form div {
-	width: calc(100% - 4px);
-} */
-/* size - padding */
-.contact__category-container {
-  grid-column: 1/13;
-  grid-row: 1/2;
-}
-
-.contact__email-container {
-  grid-column: 1/7;
-  grid-row: 2/3;
-}
-
-.contact__subject-container {
-  grid-column: 7/13;
-  grid-row: 2/3;
-}
-
-.contact__message-container {
-  grid-column: 1/13;
-  grid-row: 3/4;
-}
-
-.contact__buttons-container {
-  display: flex;
-  justify-content: center;
-}
-
 .contact__category-container select {
-  width: 100%;
+  max-width: 100%;
 }
-
-.contact__buttons-container .button, .contact__buttons-container .button-light {
-  margin: 0 1rem;
-}
-
-.contact__buttons-container input {
-  cursor: pointer;
-}
-
-.contact__message-container label {
-  display: block;
-}
-
 .contact__message-container textarea {
   resize: vertical;
   width: 100%;
   height: 10rem;
 }
+.contact__buttons-container {
+  display: flex;
+  justify-content: center;
+}
+.contact__buttons-container .button, .contact__buttons-container .button-light {
+  margin: 0 1rem;
+}
+.contact__buttons-container input {
+  cursor: pointer;
+}
+.contact__buttons-container label {
+  display: block;
+}
+.contact__inputs-container input, .contact__form textarea, .contact__form select {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+.contact .row {
+  box-sizing: content-box;
+}
 
 @media only screen and (max-width: 701px) {
+  .contact-container .wrapper {
+    width: 100vw;
+  }
+
   .contact {
     min-width: 0;
     width: 100%;
   }
-
-  .contact__inputs-container {
-    column-gap: 0;
-  }
-
-  .contact__email-container {
-    grid-column: 1/13;
-    grid-row: 2/3;
-  }
-
-  .contact__subject-container {
-    grid-column: 1/13;
-    grid-row: 3/4;
-  }
-
-  .contact__message-container {
-    grid-column: 1/13;
-    grid-row: 4/5;
-  }
-
   .contact__buttons-container {
     flex-wrap: wrap;
   }
-
   .contact__buttons-container .button, .contact__buttons-container .button-light {
     margin: 0.5rem;
   }
