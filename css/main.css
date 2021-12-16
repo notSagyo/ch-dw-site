@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-body {
-  padding: 0;
-  margin: 0;
-  color: #EEFBFB;
-  text-shadow: 1px 1px 4px #0c161d80;
-}
-
 body, input, textarea, select {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
@@ -13,35 +6,37 @@ body, input, textarea, select {
   letter-spacing: 0.05rem;
 }
 
-h1, h2, h3, h4, h5, h6, img {
+body {
+  padding: 0;
+  margin: 0;
+  color: #EEFBFB;
+  text-shadow: 1px 1px 4px #0c161d80;
+}
+body h1, body h2, body h3, body h4, body h5, body h6, body img {
   padding: 0;
   margin: 0;
   font-weight: inherit;
   font-size: inherit;
 }
-
-a {
+body a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
-
-p {
+body p {
   padding: 0;
   margin: 0;
   line-height: 1.5;
 }
-p a {
+body p a {
   color: #EEFBFB;
 }
-
-ul {
+body ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
-
-ul a:hover, p a:hover {
+body ul a:hover, body p a:hover {
   text-decoration: underline;
 }
 
@@ -799,7 +794,7 @@ ul a:hover, p a:hover {
   width: 290px;
 }
 .features .feature__text {
-  color: #203647;
+  color: #12232E;
   margin: 1rem;
   max-width: 25rem;
 }
