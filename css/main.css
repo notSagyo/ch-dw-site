@@ -251,8 +251,6 @@ body ul a:hover, body p a:hover {
     padding: 0.25rem 0;
   }
 }
-/* FOOTER ------------------------------------------------------------------- */
-/* DONATION ------------------------- */
 .donate-container {
   display: flex;
   flex-direction: column;
@@ -304,7 +302,6 @@ body ul a:hover, body p a:hover {
   padding-bottom: calc(1.5rem + 1.5vw);
 }
 
-/* FOOTER --------------------------- */
 .footer-container {
   background: linear-gradient(135deg, #203647 0%, #12232E 100%);
 }
@@ -349,7 +346,6 @@ body ul a:hover, body p a:hover {
     margin-top: 1rem;
   }
 
-  /* DONATION ------------------------- */
   .donate {
     justify-content: center;
   }
@@ -427,7 +423,6 @@ body ul a:hover, body p a:hover {
   align-items: center;
   min-height: 5rem;
   padding: 1rem 0;
-  /* height fix */
 }
 .supporters h2 {
   font-size: 1.5rem;
@@ -458,7 +453,6 @@ body ul a:hover, body p a:hover {
 .team .team-members {
   display: flex;
   justify-content: space-around;
-  /* flex-wrap: wrap; */
   width: 100%;
 }
 .team .team-members li {

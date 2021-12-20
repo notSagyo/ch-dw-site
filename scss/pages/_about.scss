@@ -42,18 +42,7 @@
 
 	h2 { @include font(1.5rem, 600); }
 
-	/* height fix */
 	img { width: 3rem; }
-
-	// .supporters-icons {
-	// 	display: grid;
-	// 	grid-template-columns: repeat(12, 1fr);
-	// 	row-gap: 1rem;
-	// 	justify-content: space-around;
-	// 	justify-items: center;
-	// 	margin-left: 1rem;
-	// 	width: 100%;
-	// }
 }
 
 .team-container {
@@ -78,7 +67,6 @@
 	.team-members {
 		display: flex;
 		justify-content: space-around;
-		/* flex-wrap: wrap; */
 		width: 100%;
 
 		li {
