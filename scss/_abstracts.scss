@@ -4,6 +4,15 @@ $light-blue: #007CC7;
 $lightest-blue: #4DA8DA;
 $dark-blue-shadow: #203647;
 $light-blue-shadow: #EEFBFB;
+
+$palette: (
+	dark-blue: $dark-blue,
+	dark-blue-shadow: $dark-blue-shadow,
+	light-blue: $light-blue,
+	light-blue-shadow: $light-blue-shadow,
+	lightest-blue: $lightest-blue
+);
+
 $shadow-color: #0c161d40;
 
 // Other
