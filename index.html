@@ -9,19 +9,19 @@
 	<meta name="description" content="The Discord bot that allows you to keep track, get notified, and share all your NFTs and collections. All without leaving Discord!">
 	<title>The NFT Tracking Discord Bot – OCEAN</title>
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<!---------- HEADER ---------->
 	<header>
 		<div class="wrapper">
 			<nav class="navbar">
-				<a class="burger-menu" onclick="collapseNavbar()">
+				<div class="burger-menu" onclick="collapseNavbar()">
 					<div></div>
 					<div></div>
 					<div></div>
-				</a>
+				</div>
 				<div class="nav__logo">
 					<a href="index.html">
 						<svg width="70" height="72" viewBox="0 0 70 72" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +32,7 @@
 				</div>
 				<ul class="nav__links collapsed">
 					<li><a href="pages/commands.html">COMMANDS</a></li>
-					<li><a class="disabled">INVITE</a></li>
+					<li><a href="#" class="disabled">INVITE</a></li>
 					<li><a href="pages/contact.html">CONTACT</a></li>
 					<li><a href="pages/about.html">ABOUT</a></li>
 				</ul>
@@ -50,15 +50,14 @@
 						<h1 class="title">OCEAN BOT</h1>
 						<p>The Discord bot that allows you to keep track, get notified, and share all your NFTs and collections. All without leaving Discord!</p>
 						<div class="hero__buttons">
-							<a href=""><div class="button shadow-l">INVITE</div></a>
-							<a href=""><div class="button button-light shadow-l">JOIN</div></a>
+							<a href="#"><div class="button shadow-l">INVITE</div></a>
+							<a href="#"><div class="button button-light shadow-l">JOIN</div></a>
 						</div>
 					</div>
 					<div class="hero__content-right img-radius">
 						<svg width="245" height="252" viewBox="0 0 70 72" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
 							<path d="M67.1254 22.9526C60.8326 7.37186 44.5751 -1.19034 28.6639 1.6342C28.7042 1.7242 28.7496 1.80916 28.787 1.90132C29.1564 2.81284 29.3148 3.75747 29.2946 4.68051C43.0105 2.29876 57.0238 9.21073 63.2993 22.0087L47.1253 28.5441C42.1278 16.9161 35.9913 10.0733 29.8065 6.91466C29.6625 7.95001 29.2917 8.94361 28.7157 9.81336C33.7161 12.5443 39.381 18.413 44.2453 29.7069L23.4237 38.1193C18.9742 26.343 19.0368 17.9925 20.893 12.6501C19.8929 12.3506 18.9698 11.8286 18.1901 11.1194C15.6622 17.5958 15.9243 27.081 20.5445 39.285L4.45544 45.7822C0.205297 32.0699 6.41815 15.1867 18.4608 8.22217C19.8194 9.90336 22.1652 10.578 24.2733 9.72624C26.856 8.68225 28.1059 5.74106 27.0604 3.157C26.0179 0.572929 23.076 -0.675545 20.4912 0.36917C18.4507 1.19357 17.2498 3.2002 17.3463 5.28099C3.02768 13.0533 -3.99516 33.4364 2.34369 49.128C8.73221 64.9384 25.3793 73.5172 41.5115 70.3089C41.2494 69.9172 41.0233 69.4924 40.8441 69.041C40.6173 68.4887 40.4776 67.9264 40.402 67.3634C26.1302 69.9503 11.4912 62.4408 5.53759 48.6968L21.7022 42.1664C26.8113 54.181 34.2712 62.3112 40.5424 65.5324C40.4149 64.402 41.1616 62.9282 41.9003 62.4739C36.9222 59.3736 29.4163 52.2103 24.5858 40.9993L45.4117 32.5861C49.6122 43.7317 49.389 54.2055 48.1218 59.9604C49.1075 59.7955 50.6533 60.3233 51.4064 61.1455C53.3741 54.3927 52.8147 43.2298 48.2939 31.4212L64.5255 24.862C69.6345 38.6838 62.8176 55.4525 51.1976 63.641C49.8224 62.0649 47.553 61.4457 45.5046 62.2752C42.9184 63.3163 41.6692 66.256 42.7139 68.8423C43.7579 71.4271 46.7005 72.6741 49.286 71.6323C51.3675 70.7891 52.5836 68.7083 52.4238 66.5822C65.8258 57.5441 73.4188 38.5232 67.1254 22.9526Z"/>
 						</svg>
-						<!-- <img class="img-radius shadow-l" src="img/OCEAN.svg" alt=""> -->
 					</div>
 				</div>
 			</div>
@@ -73,10 +72,10 @@
 					<!-- Feature 1 -->
 					<div class="feature">
 						<div class="feature__img">
-							<img class="img-radius shadow-l" src="img/feature-1.jpg" alt="">
+							<img class="img-radius shadow-l" src="img/feature-1.webp" width="290px" height="230px" alt="">
 						</div>
 						<div class="feature__text">
-							<h3>Share</h3>
+							<h2 class="feature__title">Share</h2>
 							<p>Show off your creations and owned NFTs in any server!</p>
 							<p>Doesn't matter if it's one or hundreds, quickly embed all of them in the chat with a single command!</p>
 						</div>
@@ -84,10 +83,10 @@
 					<!-- Feature 2 -->
 					<div class="feature">
 						<div class="feature__img">
-							<img class="img-radius shadow-l" src="img/feature-1.jpg" alt="">
+							<img class="img-radius shadow-l" src="img/feature-1.webp" width="290px" height="230px" alt="">
 						</div>
 						<div class="feature__text">
-							<h3>Get notified</h3>
+							<h2 class="feature__title">Get notified</h2>
 							<p>There's a bid on your item? Your favorite artist has a new collection?</p>
 							<p>Get notifications in your DMs or server when something happens, don't miss anything without leaving Discord!</p>
 						</div>
@@ -95,13 +94,13 @@
 					<!-- Feature 3 -->
 					<div class="feature">
 						<div class="feature__img">
-							<img class="img-radius shadow-l" src="img/feature-1.jpg" alt="">
+							<img class="img-radius shadow-l" src="img/feature-1.webp" width="290px" height="230px" alt="">
 						</div>
 						<div class="feature__text">
-							<h3>Keep track</h3>
+							<h2 class="feature__title">Keep track</h2>
 							<p>A collection is trending... don't miss it!</p>
 							<p>If we notice increasing interest on a certain collection, we'll let you now!</p>
-							<p>Linked with <a>opensea.io</a> you can check item's offers, price history and everything else!</p>
+							<p>Linked with <a href="#">opensea.io</a> you can check item's offers, price history and everything else!</p>
 						</div>
 					</div>
 				</div>
@@ -122,19 +121,19 @@
 					</svg>
 					<div class="donate__right">
 						<div class="donate__info">
-							<h2>Support the project and get <span class="fw-600">awesome perks</span>!</h2>
+							<h3>Support the project and get <span class="fw-600">awesome perks</span>!</h3>
 						</div>
 						<div class="donate__bar">
-							<a href="" class="donate__link-svg">
+							<a href="#" aria-label="copy donation link" class="donate__link-svg">
 								<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-link-45deg" viewBox="0 0 16 16">
 									<path d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"/>
 									<path d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z"/>
 								</svg>
 							</a>
-							<a href="" class="donate__link-box">
+							<a href="#" class="donate__link-box">
 								<p>https://patreon.com/ocean-bot</p>
 							</a>
-							<a href="" class="donate__arrow-svg">
+							<a href="#" aria-label="open donation link" class="donate__arrow-svg">
 								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
 									<path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
 									<path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
@@ -149,48 +148,50 @@
 
 		<!-- FOOTER SECTION -->
 		<section class="wrapper">
+			<h2 class="hidden">footer</h2>
 			<div class="footer">
 				<div class="footer__links">
 					<ul class="footer__nav">
 						<li>
-							<h6><a class="disabled">INVITE</a></h6>
+							<h4><a href="#" class="disabled">INVITE</a></h4>
 						</li>
 						<li>
-							<h6><a class="disabled">DONATE</a></h6>
+							<h4><a href="#" class="disabled">DONATE</a></h4>
 						</li>
 						<li>
-							<h6><a href="pages/contact.html">CONTACT</a></h6>
+							<h4><a href="pages/contact.html">CONTACT</a></h4>
 						</li>
 						<li>
-							<h6><a href="pages/about.html">ABOUT</a></h6>
+							<h4><a href="pages/about.html">ABOUT</a></h4>
 						</li>
 					</ul>
 					<ul class="footer__social">
 						<li>
-							<a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+							<a href="#" aria-label="Discord"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
 								<path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
 							</svg></a>
 						</li>
 						<li>
-							<a href=""><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+							<a href="#" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
 								<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
 								</svg></a>
 						</li>
-							<a href="https://github.com/notSagyo/ch-dw-site" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+						<li>
+							<a href="https://github.com/notSagyo/ch-dw-site" aria-label="GitHub" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
 								<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
 							</svg></a>
 						</li>
 					</ul>
 				</div>
 				<div class="footer__credits">
-					<h6>
-						<p>Site made by <a href="" class="fw-600">Stecko Boris</a></p>
-					</h6>
+					<h4>
+						<p>Site made by <a href="#" class="fw-600">Stecko Boris</a></p>
+					</h4>
 				</div>
 			</div>
 		</section>
 	</footer>
 
-	<script src="js/main.js"></script>
+	<script src="js/main.js" async defer></script>
 </body>
 </html>

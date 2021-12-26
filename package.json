@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/main.scss css/main.css --source-map true",
+    "build-css": "node-sass --include-path scss scss/main.scss css/main.css --source-map true --output-style compressed",
     "watch-css": "nodemon --ext scss --exec \"npm run build-css\"",
-    "build-bootstrap": "node-sass --include-path scss scss/bootstrap/bootstrap.scss css/bootstrap.css --source-map true",
+    "build-bootstrap": "node-sass --include-path scss scss/bootstrap/bootstrap.scss css/bootstrap.css --source-map true --output-style compressed",
     "watch-bootstrap": "nodemon --ext scss --exec \"npm run build-bootstrap\""
   },
   "repository": {

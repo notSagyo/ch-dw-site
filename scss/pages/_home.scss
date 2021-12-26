@@ -72,7 +72,10 @@
 		display: flex;
 		margin-bottom: 4rem;
 
-		&__img img { width: 290px; }
+		&__img img {
+			width: 290px;
+			height: 230px;
+		}
 
 		&__text {
 			color: $dark-blue;
@@ -80,7 +83,7 @@
 			max-width: 25rem;
 		}
 
-		h3 {
+		&__title {
 			font-weight: 700;
 			font-size: 2rem;
 		}
@@ -90,7 +93,7 @@
 			font-weight: 500;
 		}
 
-		&:nth-child(2n) {
+		&:nth-of-type(2n) {
 			flex-direction: row-reverse;
 			margin-left: auto;
 			text-align: end;
@@ -163,7 +166,7 @@
 			max-width: 290px;
 		}
 
-		&:nth-child(2n) {
+		&:nth-of-type(2n) {
 			flex-direction: column;
 			margin-left: 0;
 			text-align: center;

@@ -1,4 +1,4 @@
-// ABOUT --------------------------------------------------------------------- //
+// ABOUT -------------------------------------------------------------------- //
 .about-container {
 	min-height: calc(100vh - 9rem);
 
@@ -76,10 +76,8 @@
 			flex-basis: 25%;
 		}
 
-		img { width: 128px; }
-
-		li h3 { font-size: 1.5rem; }
-		li h4 { color: $light-blue-shadow; }
+		li .member-name { font-size: 1.5rem; }
+		li .member-position { color: $light-blue-shadow; }
 	}
 }
 
@@ -118,13 +116,13 @@
 	max-height: none;
 	padding-top: 3rem;
 
-	h2 { margin-bottom: 3rem; }
+	.member-name { margin-bottom: 3rem; }
 
 	.team-members {
 		flex-direction: column;
 
 		li { margin-bottom: 3rem; }
-		li h4 { line-height: 1.5;}
+		li .member-position { line-height: 1.5;}
 	}
 }
 }

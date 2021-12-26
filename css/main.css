@@ -72,6 +72,7 @@ body ul a:hover, body p a:hover {
   justify-content: center;
   padding: 1rem;
   margin: 0 -1rem;
+  cursor: pointer;
   transition: transform 0.35s;
   -webkit-tap-highlight-color: #00000000;
 }
@@ -481,13 +482,10 @@ body ul a:hover, body p a:hover {
   font-weight: 600;
   flex-basis: 25%;
 }
-.team .team-members img {
-  width: 128px;
-}
-.team .team-members li h3 {
+.team .team-members li .member-name {
   font-size: 1.5rem;
 }
-.team .team-members li h4 {
+.team .team-members li .member-position {
   color: #EEFBFB;
 }
 
@@ -521,7 +519,7 @@ body ul a:hover, body p a:hover {
     max-height: none;
     padding-top: 3rem;
   }
-  .team h2 {
+  .team .member-name {
     margin-bottom: 3rem;
   }
   .team .team-members {
@@ -530,7 +528,7 @@ body ul a:hover, body p a:hover {
   .team .team-members li {
     margin-bottom: 3rem;
   }
-  .team .team-members li h4 {
+  .team .team-members li .member-position {
     line-height: 1.5;
   }
 }
@@ -806,13 +804,14 @@ body ul a:hover, body p a:hover {
 }
 .features .feature__img img {
   width: 290px;
+  height: 230px;
 }
 .features .feature__text {
   color: #12232E;
   margin: 1rem;
   max-width: 25rem;
 }
-.features .feature h3 {
+.features .feature__title {
   font-weight: 700;
   font-size: 2rem;
 }
@@ -820,7 +819,7 @@ body ul a:hover, body p a:hover {
   padding: 0.5rem 0;
   font-weight: 500;
 }
-.features .feature:nth-child(2n) {
+.features .feature:nth-of-type(2n) {
   flex-direction: row-reverse;
   margin-left: auto;
   text-align: end;
@@ -887,7 +886,7 @@ body ul a:hover, body p a:hover {
     width: 100%;
     max-width: 290px;
   }
-  .features .feature:nth-child(2n) {
+  .features .feature:nth-of-type(2n) {
     flex-direction: column;
     margin-left: 0;
     text-align: center;
