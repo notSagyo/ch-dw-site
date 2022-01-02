@@ -519,7 +519,7 @@ body ul a:hover, body p a:hover {
     max-height: none;
     padding-top: 3rem;
   }
-  .team .member-name {
+  .team h2 {
     margin-bottom: 3rem;
   }
   .team .team-members {
@@ -528,8 +528,11 @@ body ul a:hover, body p a:hover {
   .team .team-members li {
     margin-bottom: 3rem;
   }
-  .team .team-members li .member-position {
+  .team .team-members li .member-name {
     line-height: 1.5;
+  }
+  .team .team-members li .member-position {
+    line-height: 1.25;
   }
 }
 .commands {
@@ -710,10 +713,6 @@ body ul a:hover, body p a:hover {
 }
 
 @media only screen and (max-width: 701px) {
-  .contact-container .wrapper {
-    width: 100vw;
-  }
-
   .contact {
     min-width: 0;
     width: 100%;

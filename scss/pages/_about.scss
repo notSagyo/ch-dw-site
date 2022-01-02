@@ -116,13 +116,14 @@
 	max-height: none;
 	padding-top: 3rem;
 
-	.member-name { margin-bottom: 3rem; }
+	h2 { margin-bottom: 3rem; }
 
 	.team-members {
 		flex-direction: column;
 
 		li { margin-bottom: 3rem; }
-		li .member-position { line-height: 1.5;}
+		li .member-name { line-height: 1.5; }
+		li .member-position { line-height: 1.25;}
 	}
 }
 }
