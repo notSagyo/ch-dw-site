@@ -219,6 +219,11 @@ body ul a:hover, body p a:hover {
   height: 2rem;
   margin-right: 0.5rem;
 }
+@media only screen and (max-width: 300px) {
+  .navbar .nav__logo svg {
+    display: none;
+  }
+}
 .navbar .nav__logo-text {
   font-size: 1.75rem;
   font-weight: 300;
@@ -470,6 +475,7 @@ body ul a:hover, body p a:hover {
   font-size: 4rem;
   font-weight: 600;
   margin-bottom: 6rem;
+  text-align: center;
 }
 .team .team-members {
   display: flex;
