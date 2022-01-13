@@ -803,28 +803,29 @@ body ul a:hover, body p a:hover {
   flex-direction: column;
   padding-top: 4rem;
 }
-.features .feature {
+
+.feature {
   display: flex;
   margin-bottom: 4rem;
 }
-.features .feature__img img {
+.feature__img img {
   width: 290px;
   height: 230px;
 }
-.features .feature__text {
+.feature__text {
   color: #12232E;
   margin: 1rem;
   max-width: 25rem;
 }
-.features .feature__title {
+.feature__title {
   font-weight: 700;
   font-size: 2rem;
 }
-.features .feature p {
+.feature p {
   padding: 0.5rem 0;
   font-weight: 500;
 }
-.features .feature:nth-of-type(2n) {
+.feature:nth-of-type(2n) {
   flex-direction: row-reverse;
   margin-left: auto;
   text-align: end;
@@ -837,7 +838,7 @@ body ul a:hover, body p a:hover {
     height: 50rem;
   }
 
-  .features .feature .feature__text {
+  .feature__text {
     margin: 0 1rem;
   }
 }
@@ -878,20 +879,24 @@ body ul a:hover, body p a:hover {
   .features {
     align-items: center;
   }
-  .features .feature {
+
+  .feature {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     width: 100%;
     max-width: 290px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
-  .features .feature__img img {
+  .feature__text {
+    margin: 1rem 0;
+  }
+  .feature__img img {
     width: 100%;
     max-width: 290px;
   }
-  .features .feature:nth-of-type(2n) {
+  .feature:nth-of-type(2n) {
     flex-direction: column;
     margin-left: 0;
     text-align: center;
