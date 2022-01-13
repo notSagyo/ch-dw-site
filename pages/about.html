@@ -12,6 +12,8 @@
 	<!-- BS CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<!-- AOS CSS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<!---------- HEADER ---------->
@@ -46,12 +48,11 @@
 		<!-- ABOUT SECTION -->
 		<section class="top-section-container about-container">
 			<div class="wrapper">
-				<div class="about">
+				<div class="about" data-aos="fade-up">
 					<h1 class="title">We're a team of friends who support the growth of the decentralized web<h1>
 					<h2 class="subtitle">This bot is our grain of sand to contribute and support the change, provided for free to reach and invite a wider audience to join this process<h3>
 				</div>
 			</div>
-			<!-- <img class="waves features__waves-top" src="../img/waves-features-top.svg" alt=""> -->
 		</section>
 
 		<!-- SUPPORTERS SECTION -->
@@ -194,5 +195,10 @@
 	</footer>
 
 	<script src="../js/main.js"></script>
+	<!-- AOS JS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>

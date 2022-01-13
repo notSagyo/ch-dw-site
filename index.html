@@ -12,6 +12,8 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- AOS CSS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<!---------- HEADER ---------->
@@ -70,7 +72,7 @@
 			<div class="wrapper">
 				<div class="features textshadow-light">
 					<!-- Feature 1 -->
-					<div class="feature">
+					<div class="feature" data-aos="fade-right" data-aos-once="true">
 						<div class="feature__img">
 							<img class="img-radius shadow-l" src="img/feature-1.webp" width="290px" height="230px" alt="">
 						</div>
@@ -81,7 +83,7 @@
 						</div>
 					</div>
 					<!-- Feature 2 -->
-					<div class="feature">
+					<div class="feature" data-aos="fade-left" data-aos-once="true">
 						<div class="feature__img">
 							<img class="img-radius shadow-l" src="img/feature-2.webp" width="290px" height="230px" alt="">
 						</div>
@@ -92,7 +94,7 @@
 						</div>
 					</div>
 					<!-- Feature 3 -->
-					<div class="feature">
+					<div class="feature" data-aos="fade-right" data-aos-once="true">
 						<div class="feature__img">
 							<img class="img-radius shadow-l" src="img/feature-3.webp" width="290px" height="230px" alt="">
 						</div>
@@ -192,5 +194,10 @@
 	</footer>
 
 	<script src="js/main.js" async defer></script>
+	<!-- AOS JS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 </html>
