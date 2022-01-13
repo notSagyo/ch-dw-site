@@ -723,6 +723,9 @@ body ul a:hover, body p a:hover {
     min-width: 0;
     width: 100%;
   }
+  .contact__category-container select {
+    width: 100%;
+  }
   .contact__buttons-container {
     flex-wrap: wrap;
   }

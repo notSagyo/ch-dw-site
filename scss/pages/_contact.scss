@@ -66,6 +66,10 @@
 	min-width: 0;
 	width: 100%;
 
+	&__category-container {
+		select { width: 100%; }
+	}
+
 	&__buttons-container { flex-wrap: wrap; }
 
 	&__buttons-container .button { margin: .5rem; }
