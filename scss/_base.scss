@@ -146,11 +146,11 @@ body {
 	pointer-events: none;
 	margin-top: -1px;
 
-  &--light {
-    @extend .waves;
+	&--light {
+		@extend .waves;
 
-    margin-bottom: -1px;
-  }
+		margin-bottom: -1px;
+	}
 }
 
 // smol classes
