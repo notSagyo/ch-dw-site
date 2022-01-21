@@ -6,9 +6,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" href="../img/OCEAN-light.svg" type="image/x-icon">
 	<meta name="author" content="Stecko Boris">
-	<meta name="keywords" content="" content="Discord bot, Discord server, Discord invite, ocean bot, NFT, crypto, web3, commands, bot commands, decentralized">
+	<meta name="keywords" content="Discord bot, Discord server, Discord invite, ocean bot, NFT, crypto, web3, commands, bot commands, decentralized">
 	<meta name="description" content="Commands • The Discord bot that allows you to keep track, get notified, and share all your NFTs and collections. All without leaving Discord!">
 	<title>Bot Commands – OCEAN</title>
+	<meta name="theme-color" content="#4DA8DA">
+	<!-- SOCIAL SHARE -->
+	<meta name="twitter:image" content="https://i.imgur.com/d84aU22.jpg">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="The NFT Tracking Discord Bot – OCEAN">
+	<meta name="twitter:description" content="The Discord bot that allows you to keep track, get notified, and share all your NFTs and collections. All without leaving Discord!">
+	<meta property="og:site_name" content="OCEAN">
+	<meta property="og:title" content="The NFT Tracking Discord Bot – OCEAN">
+	<meta property="og:description" content="The Discord bot that allows you to keep track, get notified, and share all your NFTs and collections. All without leaving Discord!">
+	<meta property="og:image:alt" content="The Discord bot that allows you to keep track, get notified, and share all your NFTs and collections. All without leaving Discord!">
+	<meta property="og:image" content="https://i.imgur.com/d84aU22.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image" content="https://i.imgur.com/mjvpGYc.jpg">
+	<meta property="og:image:width" content="400">
+	<meta property="og:image:height" content="400">
+	<meta property="og:url" content="https://notsagyo.github.io/ch-dw-site/pages/commands.html">
+	<meta property="og:type" content="object">
 	<!-- BS CSS -->
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../css/main.css">
@@ -32,7 +50,7 @@
 					</a>
 				</div>
 				<ul class="nav__links collapsed">
-					<li><a href="commands.html">COMMANDS</a></li>
+					<li><a href="#">COMMANDS</a></li>
 					<li><a href="https://discord.com/api/oauth2/authorize?client_id=928762369688096909&permissions=8&scope=bot" target="_blank">INVITE</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
 					<li><a href="about.html">ABOUT</a></li>
@@ -51,13 +69,13 @@
 					<div class="commands__categories col-md-4">
 						<h2><span class="section-header">CATEGORIES</span></h2>
 						<ul class="commands__categories-list shadow-l">
-							<li class="commands__category-item active"><a href="#">All</a></li>
+							<li class="commands__category-item"><a href="#">All</a></li>
 							<li class="commands__category-item"><a href="#">Account</a></li>
 							<li class="commands__category-item"><a href="#">Crypto</a></li>
 							<li class="commands__category-item"><a href="#">NFTs</a></li>
 							<li class="commands__category-item"><a href="#">Utils</a></li>
 							<li class="commands__category-item"><a href="#">Fun</a></li>
-							<li class="commands__category-item"><a href="#">Moderation</a></li>
+							<li class="commands__category-item active"><a href="#">Moderation</a></li>
 						</ul>
 					</div>
 					<div class="commands__commands-block col-md-8">
@@ -74,68 +92,76 @@
 						</div>
 						<ul class="commands__commands-list shadow-l">
 							<li class="command">
-								<a href="#" class="command__name">$bigtext</a>
-								<span class="command__description"> - Generates text with regional indicators</span>
+								<a href="#" class="command__name">$kick</a>
+								<span class="command__description"> - Kick a member</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$f</a>
-								<span class="command__description"> - F to pay respects</span>
+								<a href="#" class="command__name">$ban</a>
+								<span class="command__description"> - Ban a member, optional time limit</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$flipcoin</a>
-								<span class="command__description"> - Flip a coin</span>
+								<a href="#" class="command__name">$ban save</a>
+								<span class="command__description"> - Ban a user and save their messages in chat</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$fortune</a>
-								<span class="command__description"> - Fortune cookie messages</span>
+								<a href="#" class="command__name">$mute</a>
+								<span class="command__description"> - Mute a member so they cannot type or speak</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$lenny</a>
-								<span class="command__description"> - ( ͡° ͜ʖ ͡°)</span>
+								<a href="#" class="command__name">$unmute</a>
+								<span class="command__description"> - Unmute a member</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$lennyd</a>
-								<span class="command__description"> - Same as lenny, but I also remove your command</span>
+								<a href="#" class="command__name">$softban</a>
+								<span class="command__description"> - Softban a member (ban and immediate unban to delete user messages)</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$say</a>
-								<span class="command__description"> - Same as say, but I also remove your command</span>
+								<a href="#" class="command__name">$warn</a>
+								<span class="command__description"> - Warn a member</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$shrug</a>
-								<span class="command__description"> - ¯\_(ツ)_/¯</span>
+								<a href="#" class="command__name">$deafen</a>
+								<span class="command__description"> - Deafen a member</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$bigtext</a>
-								<span class="command__description"> - Generates text with regional indicators</span>
+								<a href="#" class="command__name">$lock</a>
+								<span class="command__description"> - Lock a channel with optional timer and message</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$f</a>
-								<span class="command__description"> - F to pay respects</span>
+								<a href="#" class="command__name">$reason</a>
+								<span class="command__description"> - Supply a reason for a mod log case</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$flipcoin</a>
-								<span class="command__description"> - Flip a coin</span>
+								<a href="#" class="command__name">$modlogs</a>
+								<span class="command__description"> - Get a list of mod logs for a user</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$fortune</a>
-								<span class="command__description"> - Fortune cookie messages</span>
-							</li>
-							<li class="command">
-								<a href="#" class="command__name">$lenny</a>
-								<span class="command__description"> - ( ͡° ͜ʖ ͡°)</span>
+								<a href="#" class="command__name">$unlock</a>
+								<span class="command__description"> - Unlock a previously locked channel</span>
 							</li>
 							<li class="command">
 								<a href="#" class="command__name">$lennyd</a>
 								<span class="command__description"> - Same as lenny, but I also remove your command</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$say</a>
-								<span class="command__description"> - Same as say, but I also remove your command</span>
+								<a href="#" class="command__name">$unban</a>
+								<span class="command__description"> - Unban a member</span>
 							</li>
 							<li class="command">
-								<a href="#" class="command__name">$shrug</a>
-								<span class="command__description"> - ¯\_(ツ)_/¯</span>
+								<a href="#" class="command__name">$warnings</a>
+								<span class="command__description"> - Get warnings for a user</span>
+							</li>
+							<li class="command">
+								<a href="#" class="command__name">$note</a>
+								<span class="command__description"> - Add note(s) about a member</span>
+							</li>
+							<li class="command">
+								<a href="#" class="command__name">$notes</a>
+								<span class="command__description"> - Get notes for a user</span>
+							</li>
+							<li class="command">
+								<a href="#" class="command__name">$delnote</a>
+								<span class="command__description"> - Delete a note about a member</span>
 							</li>
 						</ul>
 					</div>
@@ -218,9 +244,7 @@
 				</ul>
 			</div>
 			<div class="footer__credits">
-				<h4>
-					<p>Site made by <a href="https://github.com/notSagyo/ch-dw-site" class="fw-600">Stecko Boris</a></p>
-				</h4>
+				<h4>Site made by <a href="https://github.com/notSagyo/ch-dw-site" class="fw-600">Stecko Boris</a></h4>
 			</div>
 		</div>
 	</section>
